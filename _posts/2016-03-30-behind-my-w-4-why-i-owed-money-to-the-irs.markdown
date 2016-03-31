@@ -41,6 +41,7 @@ This is how a paycheck gets calculated:
 
 
 Some of these values are fixed amounts:
+
 * the social security tax is a fixed 6.2% of the FTW (in 2016). That amount is correct for both of us.
 * the same applies for the Medicare, @ 1.45% (for 2016), which is also correct.
 The gross income is fixed and the bonus you earn depends on you. Pre-tax amounts also depends on what your company offers you and what you actually claimed, such as medical insurance and a 401k plan.
