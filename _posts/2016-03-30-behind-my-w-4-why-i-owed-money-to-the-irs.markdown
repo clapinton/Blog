@@ -64,11 +64,19 @@ This amount comes from a table on <a href="https://www.irs.gov/pub/irs-pdf/p15.p
 
 Start off by taking the number of claimed allowances (box 5 from W-4) and multiply it by the allowance amount for that year, depending on the frequency of payment (page 42 of Publication 15, in 2016). Subtract the result from the taxable income.
 
-![Withholding Allowances Amounts for 2016]({{ site.url }}/assets/2016-03-30/pub15-withholding-allowance-amount.jpg)
+<center>
+	<img src="{{ site.url }}/assets/2016-03-30/pub15-withholding-allowance-amount.jpg" title="Withholding Allowances Amounts for 2016">
+</center>	
+
+<br/>
 
 Take your new amount and use the Percentage Method Tables (page 44) to get to the final formula to calculate your federal tax that will be withheld. So if you are married and you end up with a FTW of $3,675 on a monthly basis, claiming 2 allowances, that means you should pay:
 
-![Percentage Method Tables - Monthly payments]({{ site.url }}/assets/2016-03-30/pub15-income-tax-withholding-percentage-method-monthly.jpg)
+<center>
+	<img src="{{ site.url }}/assets/2016-03-30/pub15-income-tax-withholding-percentage-method-monthly.jpg" title="Percentage Method Tables - Monthly payments">
+</center>
+
+<br/>
 
 1. Subtract the two allowances: `$3,675 - 2x($337.50) = $3,000`
 
