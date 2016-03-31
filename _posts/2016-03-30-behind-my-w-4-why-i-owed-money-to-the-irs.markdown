@@ -6,9 +6,12 @@ tags: w4, tax
 
 >DISCLAIMER: I'm not an accountant. The knowledge I have came from reading instruction documents from the IRS itself. So DON'T hold me responsible if you end up in trouble. I suggest you take this as an intro and go research for yourself, specially if you think that your case is different in any way.
 
+<br/>
+
 Let's talk about one of humanity's favorite subjects: taxes.
 
 Recently, I received the following note from my accountant:
+
 >Eric, sometimes my job is not kind. Unfortunately the deduction wasn't enough.
 
 Yes, I owed money to the IRS. Again. The same thing happen in 2015, but now the debt was bigger (twice as big, to be exact). How the hell did this happen? I had changed my W-4 as my accountant instructed me in order to avoid owing money, and yet here I am, having to pay them again. Was it her fault? It had to be. She told me what to fill in and I did, trusting her judgement.
