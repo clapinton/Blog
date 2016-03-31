@@ -47,7 +47,7 @@ The gross income is fixed and the bonus you earn depends on you. Pre-tax amounts
 
 Then we get to the taxes. This is where your company looks at your W-4. You know, one of the documents you have to fill out every time you join a company as an employee.
 
-![W-4 form fields](https://i.ytimg.com/vi/Dzal7kOgC64/maxresdefault.jpg)
+![W-4 form fields]({{ site.url }}/assets/2016-03-30/w4-example.jpg)
 
 ### Calculating the State Taxes
 In CA, we have the DE4, which is the same type of form. My wife and I have worked for some 5 companies already, and we had never heard of it. And the reason is simple, according to the EDD-CA:
@@ -64,7 +64,11 @@ This amount comes from a table on <a href="https://www.irs.gov/pub/irs-pdf/p15.p
 
 Start off by taking the number of claimed allowances (box 5 from W-4) and multiply it by the allowance amount for that year, depending on the frequency of payment (page 42 of Publication 15, in 2016). Subtract the result from the taxable income.
 
+![Withholding Allowances Amounts for 2016]({{ site.url }}/assets/2016-03-30/pub15-withholding-allowance-amount.jpg)
+
 Take your new amount and use the Percentage Method Tables (page 44) to get to the final formula to calculate your federal tax that will be withheld. So if you are married and you end up with a FTW of $3,675 on a monthly basis, claiming 2 allowances, that means you should pay:
+
+![Percentage Method Tables - Monthly payments]({{ site.url }}/assets/2016-03-30/pub15-income-tax-withholding-percentage-method-monthly.jpg)
 
 1. Subtract the two allowances: `$3,675 - 2x($337.50) = $3,000`
 

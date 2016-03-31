@@ -10,7 +10,7 @@ title: Today I Learned...
 email: your-email@domain.com
 description: I want to capture at least one piece of new information I learn every day. I'll write about it here.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://clapinton.github.io" # the base hostname & protocol for your site
 twitter_username: clapinton
 github_username:  clapinton
 
