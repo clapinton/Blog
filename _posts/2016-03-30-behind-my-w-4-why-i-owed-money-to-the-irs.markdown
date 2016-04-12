@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: default_post
 title: Behind my W-4&#58; Why I owed money to the IRS?
 tags: w4, tax
+summary: "Let's talk about one of humanity's favorite subjects: taxes. Recently, I received the following note from my accountant: 'Eric, sometimes my job is not kind. Unfortunately the deduction wasn't enough.'"
+image: /assets/2016-03-30/hero.jpg
 ---
 
 >DISCLAIMER: I'm not an accountant. The knowledge I have came from reading instruction documents from the IRS itself. So DON'T hold me responsible if you end up in trouble. I suggest you take this as an intro and go research for yourself, specially if you think that your case is different in any way.

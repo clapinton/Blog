@@ -1,23 +1,66 @@
 ---
-layout: default
+# this is an empty front matter
 ---
 
-<div class="home">
+<!DOCTYPE html>
+<html>
 
-  <h1 class="page-heading">Posts</h1>
+  {% include head.html %}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <body>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    {% include analytics.html %}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-</div>
+    <div class="mdl-layout mdl-js-layout">
+			<canvas class="canvas-background"></canvas>
+      <main class="mdl-layout__content">	
+				<div class="mdl-grid posts-grid">
+					<div class="mdl-card mdl-shadow--2dp mdl-card-alert mdl-cell mdl-cell--12-col">
+							<p>Hey there! I'm still working on the styling here, but feel free to look around. Please let me know if you find anything broken.</p>
+					</div>
+						{% for post in site.posts %}
+							<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+								<div class="mdl-card__media" style="background-image: url('{{ post.image }}')">
+									<div class="texture-overlay"></div>									
+									<div class="mdl-card__media-text">
+										<h2>
+											<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+										</h2>
+										{{ post.date | date: "%b %-d, %Y" }}
+									</div>
+								</div>
+						
+								<div class="mdl-card__supporting-text">
+									{{ post.summary }}
+								</div>
+							</div>
+						{% endfor %}
+
+    		</div>
+			
+    {% include footer.html %}
+			
+			</main>
+
+    </div>	
+		
+		<script>
+		Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
+			var link = el.querySelector('a');
+			if(!link) {
+				return;
+			}
+			var target = link.getAttribute('href');
+			if(!target) {
+				return;
+			}
+			el.addEventListener('click', function() {
+				location.href = target;
+			});
+		});
+		</script>		
+		
+  </body>
+
+</html>

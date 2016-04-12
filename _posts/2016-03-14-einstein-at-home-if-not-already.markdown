@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: default_post
 title: Einstein at home, if you're not already
 tags: science, space
+summary: "Last week, my friend Mateus Interciso sent me this link about Einstein@Home, which is a BOINC project where you can help researchers find new neutron stars, by using your own computer's idle time to analyze sensors' data. Basically, it's crowdsourcing science. Why not?"
+image: /assets/2016-03-14/hero.jpg
 ---
 
 

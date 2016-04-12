@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: default_post
 title: Configuring Jekyll
 tags: jekyll, blog, github
+summary: "I didn't land straight on Jekyll. My needs were not fancy: I didn't want to give up my geeky side and go with a simple, WYSIWYG type of tool. I wanted a configuration which I could set up by myself and that would allow some level of tweak-iness."
+image: /assets/2016-03-10/hero.jpg
 ---
 
 ## Research... research...

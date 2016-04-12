@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: default_post
 title: My git cheat sheet
 tags: git, cheat
+summary: I first learned about git at a startup I worked for, but I never really learned it. So it made sense that, since I wanted to start this blog and it involved Github, I should learn more about it.
+image: /assets/2016-04-01/hero.jpg
 ---
 
 I first learned about git at a startup I worked for, but I never really learned it. So it made sense that, since I wanted to start this blog and it involved Github, I should learn more about it. Since I'm a more practical person, I opted for a quick intro course on <a href="https://www.codecademy.com/learn/learn-git" target="_blank">Code Academy</a>. I first created this cheat sheet on Google Keep, but it now makes more sense to keep it here.

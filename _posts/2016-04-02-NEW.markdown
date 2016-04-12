@@ -1,0 +1,40 @@
+---
+layout: default_post
+title: Cracking Google's Creative 5 Application
+tags: creative5
+summary: "So the other day my boss forwards me this link, saying 'Google wants you to play with their home page as part of a job application.' I open the link and I'm greeted with a doodled Google page, plus some instructions..."
+image: /assets/2016-04-02/hero.jpg
+---
+
+So the other day my boss forwards me this link, saying "Google wants you to play with their home page as part of a job application." I open the link and I'm greeted with a doodled Google page, plus some instructions:
+
+![Creative 5 Home Screen]({{ site.url }}/assets/2016-04-02/creative5-start-screen.jpg)
+
+>... we want to see what you can do with some shapes, a text bar, and a plain white page. Write it, design it, code it, break it.
+
+Sounds interesting! So what exactly can I do with these shapes? Well, I can move them, duplicate them, resize them and play with their anchor points, meaning they're all vector shapes. But I can't change their colors...? That's rather limited. Although Google's colors are a big part of their brand, so it kind of makes sense.
+
+
+##2 points make a line. 3 make a plane. 4 make a triangle
+Ok, so what should I do with these? Well, I'm on a plain, white canvas with some plain, colored shapes. What if I got these shapes out of the plane and made them look like a 3D shape? Even better: what if it was an optical illusion? Color illusions can be done on a 2D plane, but I want to try and add the z dimension and have some interesting illusions instead. I can start feeling some Escher-type of thing taking shape. That could work! Let's start with a basic illusion: the Penrose Triangle, by Oscar Reutersvärd.
+
+![The Penrose Triangle]({{ site.url }}/assets/2016-04-02/penrose-triangle.gif)
+
+So here's an issue: these illusions rely on shades and, sometimes, shadows. Shadows are gradients and I don't have shades of the same color here. Maybe it'll work with the Google colors? Turns out, it does work:
+
+![The Colored Penrose Triangle]({{ site.url }}/assets/2016-04-02/penrose-triangle-color.jpg)
+
+Great! So let's make one of these! And after that, I'm going to work on another shape:
+
+![The Impossible Circle]({{ site.url }}/assets/2016-04-02/impossible-circle.jpg)
+
+Or so I thought... It turns out that the triangle was fairly easy, but the circle... Well, let's just say it was enough to make me give up on this idea.
+
+So, what now...?
+
+
+##Maybe try and focus on the animation bit...
+
+Let's talk about another feature here: animation. I have 10 frames to work with, meaning I can do an animation. Well, sort of. The animation happen between frames only, meaning they're more of a transition than an animation per se. So I'd have to think in terms of scenes and transition between them
+
+
