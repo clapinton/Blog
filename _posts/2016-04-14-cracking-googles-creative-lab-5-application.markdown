@@ -10,7 +10,7 @@ image: /assets/2016-04-14/hero.jpg
 
 So the other day my boss forwards me this link, saying "Google wants you to play with their home page as part of a job application." I open the link and I'm greeted with a doodled Google page, plus some instructions:
 
-![Creative Lab 5 Home Screen](/assets/2016-04-14/creative5-start-screen.jpg)
+![Creative Lab 5 Home Screen](/assets/2016-04-14/creativelab5-start-screen.jpg)
 
 >... we want to see what you can do with some shapes, a text bar, and a plain white page. Write it, design it, code it, break it.
 
