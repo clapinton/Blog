@@ -122,6 +122,9 @@ body {
 	background: black url('/assets/global/tsuzuku.png') no-repeat 95% 50%;
 }
 
+blockquote:before, blockquote:after { /* Remove the "" from the blockquote */
+	display: none;
+}
 
 
 /***** END OF GLOBAL *****/
