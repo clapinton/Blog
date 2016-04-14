@@ -116,5 +116,12 @@ body {
 	min-height: inherit;	
 }
 
+.tsuzuku {
+	width: 100%;
+	height: 75px;
+	background: black url('/assets/global/tsuzuku.png') no-repeat 95% 50%;
+}
+
+
 
 /***** END OF GLOBAL *****/
