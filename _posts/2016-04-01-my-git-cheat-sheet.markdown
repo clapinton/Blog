@@ -10,7 +10,9 @@ I first learned about git at a startup I worked for, but I never really learned 
 
 <br/>
 
-`git init`: create a repo based on working dir;
+`git clone {URL of online repo}`: copies a repo into the folder;
+
+`git init`: initializes git;
 
 `git status`: checks the status of working dir and staging;
 
