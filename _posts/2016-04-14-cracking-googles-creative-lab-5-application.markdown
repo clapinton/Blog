@@ -18,7 +18,7 @@ Sounds interesting! So what exactly can I do with these shapes? Basic controls l
 
 Or can I?
 
-They're vector shapes on a page. That's probably a `<canvas>`. If that's a canvas, there's a .js file writing to it. Maybe I can work something through the terminal window. Let's check their .js files...
+They're vector shapes on a page. That's probably a `<canvas>`. If that's a canvas, there's a .js file writing on it. Maybe I can work something through the terminal window. Let's check their .js files...
 
 
 ## My Mona Lisa Smile
