@@ -38,14 +38,16 @@ I first learned about git at a startup I worked for, but I never really learned 
 
 `git checkout {branch-name}`: branch becomes working dir;
 
+`git fetch`: gets the latest changes from the remote repo
+
 `git merge {branch-name}`: merges branch-name into working branch;
+
+`git pull {remote-repo} {local-repo}`: executes a `git fetch` followed by `git merge`;
 
 `git branch -d {branch-name}`: deletes the branch;
 
-`git clone {remote-name}` {local-name}: clones the remote repo into your local;
+`git clone {remote-name} {local-name}`: clones the remote repo into your local;
 
 `git remote -v`: list all remote repos;
 
-`git fetch`: gets the latest changes from the remote repo
-
-`git push origin {branch-name}`: pushes my branch to the remote repo;
+`git push {remote-repo} {local-repo}`: pushes my branch to the remote repo;
