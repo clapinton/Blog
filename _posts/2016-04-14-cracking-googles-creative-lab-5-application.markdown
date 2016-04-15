@@ -132,7 +132,7 @@ Looking good, time to go to production!
 
 `Not quite what we're looking for. Try again!`
 
-Hmm.... Something's wrong with my code. But even after testing with even more colors, I couldn't find the issue. I spent some 2 hours thinking about it, drinking some coffee, walking around, listening to music, clearing my mind... and nothing. I decided to go home and take another stab at it after dinner. But as I was showing my wife, I noticed something really stupid:
+Hmm.... Something's wrong with my code. But even after testing with even more colors, I couldn't find the issue. I spent some 2 hours thinking about it, drinking some coffee, walking around, listening to music, clearing my mind... and nothing. I decided to go home and take another stab at it after dinner. But as I was showing all of my findings to my wife, I noticed something really stupid:
 
 Google's guide says their red is #EA4335. CL5 says the red is #EA4235. "You have got to be fucking kidding me", I shouted, as my wife proudly demanded a kiss for helping me solve, in 2 minutes, a problem I couldn't solve in 2 hours...
 
