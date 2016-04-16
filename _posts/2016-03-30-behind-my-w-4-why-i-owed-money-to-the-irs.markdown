@@ -1,5 +1,4 @@
 ---
-layout: default_post
 title: Behind my W-4&#58; Why I owed money to the IRS?
 tags: w4, tax
 summary: "Let's talk about one of humanity's favorite subjects: taxes. Recently, I received the following note from my accountant: 'Eric, sometimes my job is not kind. Unfortunately the deduction wasn't enough.'"

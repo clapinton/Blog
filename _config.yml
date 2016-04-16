@@ -16,3 +16,13 @@ github_username:  clapinton
 
 # Build settings
 markdown: kramdown
+
+# Defaults settings
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: default_post
+      comments: true

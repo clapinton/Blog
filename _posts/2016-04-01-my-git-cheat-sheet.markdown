@@ -1,5 +1,4 @@
 ---
-layout: default_post
 title: My git cheat sheet
 tags: git, cheat
 summary: I first learned about git at a startup I worked for, but I never really learned it. So it made sense that, since I wanted to start this blog and it involved Github, I should learn more about it.
