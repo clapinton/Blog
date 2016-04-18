@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /2016/03/07/to-do-list.html
+Disallow: /2016/04/01/my-git-cheat-sheet.html
