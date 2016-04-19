@@ -66,6 +66,10 @@ body {
 	background-color: rgba(0,0,0,0.6);
 }
 
+.mdl-card__media {
+	background-color: #2b2b2b;
+}
+
 
 
 /***** END OF HOME PAGE *****/
