@@ -142,34 +142,8 @@ body {
 	margin: auto;
 }
 
-
-/*** WARNINGS ***/
-
-.mdl-card-alert p, .mdl-card-success p, .mdl-card-warning p, .mdl-card-error p {
-	margin-bottom: 0;
-	color: rgba(0,0,0,.54);	
-}
-
-.mdl-card-alert, .mdl-card-success, .mdl-card-warning, .mdl-card-error {
-	padding: 16px;
-}
-
-.mdl-grid .mdl-card-alert {
-	min-height: inherit;
-	background-color: #64B5F6;
-	text-align: center;
-}
-
-.mdl-card-success {
-	min-height: inherit;
-}
-
-.mdl-card-warning {
-	min-height: inherit;	
-}
-
-.mdl-card-error {
-	min-height: inherit;	
+.mdl-layout__content { /* Making header scrollable on small screens, from http://stackoverflow.com/questions/31304232/how-can-i-make-header-scrollable-for-smaller-screens-in-mdl */
+	flex-shrink: 0;
 }
 
 .tsuzuku {
@@ -204,6 +178,36 @@ header .mdl-layout-title:hover {
 
 .mdl-layout__header-single-item .mdl-layout-title {
 	font-size: 40px;
+}
+
+
+/* WARNINGS */
+
+.mdl-card-alert p, .mdl-card-success p, .mdl-card-warning p, .mdl-card-error p {
+	margin-bottom: 0;
+	color: rgba(0,0,0,.54);	
+}
+
+.mdl-card-alert, .mdl-card-success, .mdl-card-warning, .mdl-card-error {
+	padding: 16px;
+}
+
+.mdl-grid .mdl-card-alert {
+	min-height: inherit;
+	background-color: #64B5F6;
+	text-align: center;
+}
+
+.mdl-card-success {
+	min-height: inherit;
+}
+
+.mdl-card-warning {
+	min-height: inherit;	
+}
+
+.mdl-card-error {
+	min-height: inherit;	
 }
 
 
