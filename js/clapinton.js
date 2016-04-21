@@ -201,11 +201,26 @@ function colorize() {
   ctx.globalCompositeOperation = compositeOperation;
 }
 
+
 window.onload = function() {
   canvasEl = document.getElementsByClassName("canvas-background")[0];
 
 
-  // Kick off
-  regenerateTriangles();
+  // Kick off. Generates background and slowly displays it in order to acoid flashing after process is complete.
+	regenerateTriangles();
+	var bgTimer = setInterval(showBackground, 50);
+	
+	function showBackground() {
+	
+		var o = Number($(".canvas-background").css("opacity"));
+		if (o < 1) {
+			o = o + 0.1;
+		} else {
+			clearInterval(bgTimer);			
+		}
 
+		$(".canvas-background").css("opacity",o);
+	}
+	
+	
 };

@@ -1,9 +1,8 @@
 /***** HOME PAGE *****/
 
 body {
-	background: 'red';
+	background: #262626;
 }
-
 
 .posts-grid {
 	max-width: 900px;
@@ -131,6 +130,7 @@ body {
 
 .canvas-background {
 	position: fixed;
+	opacity: 0;
 }
 
 .mdl-layout__content .mdl-mini-footer {
