@@ -1,6 +1,6 @@
 ---
 title: Cracking Google's Creative Lab 5 Application
-tags: creative5
+tags: creative5, javascript
 summary: "So the other day my boss forwards me this link, saying 'Google wants you to play with their home page as part of a job application.' I open the link and I'm greeted with a doodled Google page, plus some instructions..."
 image: /assets/2016-04-14/hero.jpg
 ---
