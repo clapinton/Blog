@@ -1,13 +1,13 @@
 ---
-title: Coding/Designing Google's Creative 5 Application
+title: Designing & Coding Google's Creative 5 Application
 tags: creative5, javascript
-summary: "So now that I’m a techno crab, what should I do? I have a lot of tools at my disposal that allow me to hack these shapes, which are all flat, sitting on a flat canvas. So what if I unflatten them by adding depth?"
+summary: "Now that I’m a techno crab, what should I do? I have a lot of tools at my disposal that allow me to hack these shapes, which are all flat, sitting on a flat canvas. So what if I unflatten them by adding depth?"
 image: /assets/2016-04-23/hero.jpg
 ---
 
 > [Click here for the first part of this post.]({% post_url 2016-04-14-cracking-googles-creative-lab-5-application %})
 
-So now that I'm a techno crab, what should I do? I have a lot of tools at my disposal that allow me to hack these shapes, which are all flat, sitting on a flat canvas.
+Now that I'm a techno crab, what should I do? I have a lot of tools at my disposal that allow me to hack these shapes, which are all flat, sitting on a flat canvas.
 
 So what if I unflatten them by adding depth? I could build interesting structures with these shapes. Maybe even an illusion. I could then use each frame to assemble this structure. It will probably look a bit boring bringing in piece by piece, since the animation is more of a transition between frames, but let's see what I can make of it.
 
