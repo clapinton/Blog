@@ -90,7 +90,7 @@ In the past, Google's stance on dynamic generated content was a big "NO". You wo
 
 I couldn't find anything on how Bing reacts to js. Apparently, <a href="http://webmasters.stackexchange.com/questions/82783/does-bing-execute-javascript-when-crawling-and-indexing-web-pages-like-google" target="_blank">they haven't been very responsive</a>. As for Yahoo, they're powered by Bing, if you care about them too.
 
-So now I can change/add messages as I see fit in a couple of minutes. It's a small CMS-like feature that works well, it's free, easy to set up and maintain and there's more time for the Engineers to play some Jenga:
+So now I can change/add messages as I see fit in a couple of minutes. It's a small CMS-like feature that works well, it's free, easy to set up and maintain and leaves more time for the Engineers to play some Jenga:
 
 <blockquote class="twitter-tweet" data-lang="en" align="center"><p lang="en" dir="ltr">Cleaning data can be tiresome! Let&#39;s play Jenga 😜 <a href="https://twitter.com/crowdanalytix_q">@crowdanalytix_q</a> <a href="https://t.co/AVzMfhrL2N">pic.twitter.com/AVzMfhrL2N</a></p>&mdash; Jithesh (@vu3jej) <a href="https://twitter.com/vu3jej/status/680024903970492416">December 24, 2015</a></blockquote>
 <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
