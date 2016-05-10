@@ -3,7 +3,6 @@ title: Dynamic page content using Google Tag Manager
 tags: googletagmanager
 summary: As a marketer, I needed a quick and easy way to tweak landing pages messages targeted at buyer personas, without having to go through Engineering for small changes. Google Tag Manager let me do just that.
 image: /assets/2016-04-28/hero.jpg
-hidden: true
 ---
 
 Here's an interesting application for Google Tag Manager: as a marketer, I need to quickly change page content in order to tweak messaging, specially regarding landing pages for our ads, in order to target the right message at the right buyer persona. That would be ok if I had a CMS backing my company's website, but that isn't the case. I'm 12:30 hours behind the Engineering team, which means that after I submit a request for a change on the website, they have to make time on their sprint, code the change, test, approve and then push to prod. Sometimes, I have to approve it myself, which means that'll take one more day for it to get deployed.
