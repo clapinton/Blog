@@ -13,20 +13,20 @@ I needed something that I could do myself and do it quickly. We tried transferri
 
 ## What is Google Tag Manager
 
-I won't dwell too much on it. Suffice to say, it's a neat little free tool from Google (probably in Beta, because Google) where you can fire scripts from a GUI dashboard. It's powerful, yet very easy to work with. Even the debugging is great. Google has <a href="https://www.youtube.com/watch?v=6s33_E-UhHQ" target="_blank">a nice video</a> which showcases basic usage. You should definitely watch if you've never worked with GTM.
+I won't dwell too much on it. Suffice to say, it's a neat little free tool from Google (probably in Beta, because Google) where you can, among other things, configure scripts to be fired on your website based on specific triggers, all from a GUI dashboard. It's powerful, yet very easy to work with. Even the debugging is great. Google has <a href="https://www.youtube.com/watch?v=6s33_E-UhHQ" target="_blank">a nice video</a> which showcases basic usage. You should definitely watch if you've never worked with GTM.
 
 Now to the fun stuff.
 
 
 ## Configuring GTM
 
-For my first test, I decided to use our new free product (data repo for public datasets), which we needed to link to our paid offers. We could sprinkle some generic messages around, but let's be a bit smarter and target a lead's use case.
+For my first test, I decided to use our new free product (a data repo for public datasets), which we needed to link to our paid offers. We could sprinkle some generic messages around, but let's be a bit smarter and target a lead's specific use case.
 
-In our case, filtering a list of datasets is not rendered on the client side (each filter has a unique URL), so we can look at the URL and know exactly what type of datasets you're looking at. From there, we can display a message that is more likely to resonate with you. If you set the filter for retail data, we'll display a message regarding a retail-related project. Same thing for HR, telecom, insurance etc, pretty much like a smart ad. That makes much more sense than a generic "Let us help you with your project."
+In our product, filtering a list of datasets means a new URL gets generated, so we can look at the URL and know exactly what type of datasets you're looking at. From there, we can select a message to be displayed that is more likely to resonate with you. If you set the filter for retail data, we'll display a message regarding a retail-related project. Same thing for HR, telecom, insurance etc, pretty much like a smart ad. That makes much more sense than a generic "Let us help you with your project."
 
 Yes, I could ask engineering to implement that through php, but then I wouldn't be able to make quick edits whenever I wanted. GTM gave much more flexibility to do that, with a relatively simple flow:
 
-* ask engineering to set up a hidden, blank and already styled div on every page I wanted to serve the ad to. It's a one-time set up, so I wouldn't be consuming their time with my requests going forward;
+* ask engineering to set up a hidden, blank and already styled div on the template page I wanted to serve the ad to. It's a one-time set up, so I wouldn't be consuming their time with my requests going forward;
 * on GTM, set up a trigger depending on the page URL, so it fires only on filtered pages (they always start with `/dataset?`);
 * set up a variable to parse the URL parameter;
 * set up a tag with a `switch case` to cover all use cases, or one tag for each use case (I'm going with the former);
@@ -39,7 +39,7 @@ Sketch something and send it over to engineering with some clear instructions:
 * we'll be using text only, so no need to worry about images;
 * make sure the `line-height` is good enough for wrapping lines;
 * (IMPORTANT) should be `display: none` by default;
-* (IMPORTANT) should have a unique `id`;
+* (IMPORTANT) should have a unique `id` or `class` (in our case, it's `.right-sidebar`);
 
 ![Dynamic ad containing div](/assets/2016-04-28/dynamic-ad-containing-div.jpg)
 
@@ -55,18 +55,34 @@ The trigger is a simple "Fire on: `Page URL` contains `/dataset?`"
 ### The variable
 Create a new URL type variable and configure it as "Query" type. The query key should be whatever URL parameter you use for the filter. For this example, let's make it "extras_Domain". Let's call this var "domainFilter"
 
-Note that you can also use `utm` parameters if you want to use the same tool on landing pages, coming from ads.
+Note that you can also use `utm` parameters here. That gives you even more flexibility when thinking about messaging for your ads, since you can link your ad and landing page copies in a much better way.
 
 ### The tag
-Create a new "Custom HTML tag" and add the `switch domainFilter` (don't forget the `<script>` tags), making each case a filter parameter. Then, target the block's unique id and change whatever header/p text you want there. Don't forget to change the `display` rule to `block`.
+Create a new "Custom HTML tag" and add the `switch domainFilter` (don't forget the `<script>` tags), making each case a filter parameter. Then, target the block's unique id or class and change whatever header/p text you want there. Don't forget to change the `display` rule to `block`.
 
-If you want to properly track this, It might be a good idea to also change whatever URL you have on the CTA (considering you have one inside the block) through the jQuery `.attr()` method. Append whatever utm parameter you want to properly track which CTA the user clicked on.
+If you want to properly track this, It might be a good idea to also change whatever URL you have on the CTA (considering you have one inside the block) through the jQuery `.attr()` method. Append whatever utm parameter you want to properly track which CTA the user clicked on. For example:
 
-Et voilà:
+
+```html
+<script>
+  switch ({% raw %}{{domainFilter}}) { 
+    case 'retail':
+		  $(".right-sidebar p").replaceWith("<p>We used some of these datasets to</h4>");  
+		  $(".right-sidebar h4").replaceWith("<h4>Determine top external risks that impact consolidated quarterly revenues of Macy's.</h4>");
+		  $(".right-sidebar a").attr("href","https://www.crowdanalytix.com/observe-live-project?utm_source=datax&utm_medium=rhs-block&utm_term=retail&utm_content=determine%20top%20external%20risks%20that%20impact%20consolidated%20quarterly%20revenues%20of%20macys&utm_campaign=datax");  
+		  $(".right-sidebar").css("display","block");
+      break;
+  }
+  
+</script>
+```
+
+
+## Et voilà:
 
 ![Dynamic ad final result](/assets/2016-04-28/dynamic-ad-final-result.jpg)
 
-Now it's much easier to make whatever changes you want to the text in less that 10 minutes. The engineers will surely thank you.
+Now it's much easier to make whatever changes you want to the text in less that 10 minutes.
 
 
 ## A quick note on SEO
