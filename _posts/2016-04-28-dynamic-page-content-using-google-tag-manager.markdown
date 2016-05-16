@@ -13,7 +13,7 @@ I needed something that I could do myself and do it quickly. We tried transferri
 
 ## What is Google Tag Manager
 
-I won't dwell too much on it. Suffice to say, it's a neat little free tool from Google (probably in Beta, because Google) where you can, among other things, configure scripts to be fired on your website based on specific triggers, all from a GUI dashboard. It's powerful, yet very easy to work with. Even the debugging is great. Google has <a href="https://www.youtube.com/watch?v=6s33_E-UhHQ" target="_blank">a nice video</a> which showcases basic usage. Also, CSS-Tricks <a href="https://css-tricks.com/intro-google-tag-manager/" target="_blank">wrote a nice article</a> around setting it up. You should definitely watch if you've never worked with GTM.
+I won't dwell too much on it. Suffice to say, it's a neat little free tool from Google (probably in Beta, because Google) where you can, among other things, configure scripts to be fired on your website based on specific triggers, all from a GUI dashboard. It's powerful, yet very easy to work with. Even the debugging is great. Google has <a href="https://www.youtube.com/watch?v=6s33_E-UhHQ" target="_blank">a nice video</a> which showcases basic usage. Also, CSS-Tricks <a href="https://css-tricks.com/intro-google-tag-manager/" target="_blank">wrote a nice article</a> about setting it up. You should definitely watch if you've never worked with GTM.
 
 Now to the fun stuff.
 
