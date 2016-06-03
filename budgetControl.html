@@ -211,7 +211,7 @@ i {
 		$(".lunch .spent-limit span").first().text(data.categories[1].Spent.toFixed(2));
 		$(".lunch .spent-limit span").last().text(data.categories[1].Limit);
 		if (data.categories[1].Status) {
-			$(".eatout").addClass(data.categories[1].Status);
+			$(".lunch").addClass(data.categories[1].Status);
 		}		
 
 // Market
@@ -219,7 +219,7 @@ i {
 		$(".market .spent-limit span").first().text(data.categories[2].Spent.toFixed(2));
 		$(".market .spent-limit span").last().text(data.categories[2].Limit);
 		if (data.categories[2].Status) {
-			$(".eatout").addClass(data.categories[2].Status);
+			$(".market").addClass(data.categories[2].Status);
 		}		
 		
 // Gas
@@ -227,7 +227,7 @@ i {
 		$(".gas .spent-limit span").first().text(data.categories[3].Spent.toFixed(2));
 		$(".gas .spent-limit span").last().text(data.categories[3].Limit);	
 		if (data.categories[3].Status) {
-			$(".eatout").addClass(data.categories[3].Status);
+			$(".gas").addClass(data.categories[3].Status);
 		}			
 		
 // Others
@@ -235,7 +235,7 @@ i {
 		$(".others .spent-limit span").first().text(data.categories[4].Spent.toFixed(2));
 		$(".others .spent-limit span").last().text(data.categories[4].Limit);
 		if (data.categories[4].Status) {
-			$(".eatout").addClass(data.categories[4].Status);
+			$(".others").addClass(data.categories[4].Status);
 		}		
 		
 	});
