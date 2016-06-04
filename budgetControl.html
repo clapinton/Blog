@@ -199,7 +199,7 @@ i {
 	var obj = $.getJSON("https://script.google.com/macros/s/AKfycbx_rWKO62Lm4u0HKtr1n5v8lwHwWQiFmTpPIKaS4VVTsfuZ_68/exec?action=get&categ=Eat%20Out&categ=Lunch&categ=Market&categ=Gas&categ=Others", function(data) {
 
 // Eat Out		
-		$(".eatout .budget-left p").text("$"+data.categories[0].Left);
+		$(".eatout .budget-left p").text("$"+data.categories[0].Left.toFixed(2));
 		$(".eatout .spent-limit span").first().text(data.categories[0].Spent.toFixed(2));
 		$(".eatout .spent-limit span").last().text(data.categories[0].Limit);
 		if (data.categories[0].Status) {
@@ -207,7 +207,7 @@ i {
 		}
 		
 // Lunch
-		$(".lunch .budget-left p").text("$"+data.categories[1].Left);
+		$(".lunch .budget-left p").text("$"+data.categories[1].Left.toFixed(2));
 		$(".lunch .spent-limit span").first().text(data.categories[1].Spent.toFixed(2));
 		$(".lunch .spent-limit span").last().text(data.categories[1].Limit);
 		if (data.categories[1].Status) {
@@ -215,7 +215,7 @@ i {
 		}		
 
 // Market
-		$(".market .budget-left p").text("$"+data.categories[2].Left);
+		$(".market .budget-left p").text("$"+data.categories[2].Left.toFixed(2));
 		$(".market .spent-limit span").first().text(data.categories[2].Spent.toFixed(2));
 		$(".market .spent-limit span").last().text(data.categories[2].Limit);
 		if (data.categories[2].Status) {
@@ -223,7 +223,7 @@ i {
 		}		
 		
 // Gas
-		$(".gas .budget-left p").text("$"+data.categories[3].Left);
+		$(".gas .budget-left p").text("$"+data.categories[3].Left.toFixed(2));
 		$(".gas .spent-limit span").first().text(data.categories[3].Spent.toFixed(2));
 		$(".gas .spent-limit span").last().text(data.categories[3].Limit);	
 		if (data.categories[3].Status) {
@@ -231,7 +231,7 @@ i {
 		}			
 		
 // Others
-		$(".others .budget-left p").text("$"+data.categories[4].Left);
+		$(".others .budget-left p").text("$"+data.categories[4].Left.toFixed(2));
 		$(".others .spent-limit span").first().text(data.categories[4].Spent.toFixed(2));
 		$(".others .spent-limit span").last().text(data.categories[4].Limit);
 		if (data.categories[4].Status) {
