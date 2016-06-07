@@ -99,6 +99,22 @@ i {
   background: linear-gradient(-45deg, #2c3e50, #34495e); /* Standard syntax */	
 }
 
+.spinner {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	z-index: 10; /* To make sure it will stay on top. */
+}
+
+.spinner i {
+  width: 100%;
+  margin: 0;
+  font-size: 200px;
+	position: absolute;
+	top: 45%;
+}
+
 
 </style>
 
@@ -106,6 +122,10 @@ i {
 <body>
 
 	<div class="wrapper">
+
+		<div class="spinner">
+			<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+		</div>
 
 		<div class="block eatout">
 			<div class="spent-limit">
@@ -198,6 +218,8 @@ i {
 
 	var obj = $.getJSON("https://script.google.com/macros/s/AKfycbx_rWKO62Lm4u0HKtr1n5v8lwHwWQiFmTpPIKaS4VVTsfuZ_68/exec?action=get&categ=Eat%20Out&categ=Lunch&categ=Market&categ=Gas&categ=Others", function(data) {
 
+		$(".spinner").css("display","none");  //Spinner will disappear once the function starts running, after the GET response
+		
 // Eat Out		
 		$(".eatout .budget-left p").text("$"+data.categories[0].Left.toFixed(2));
 		$(".eatout .spent-limit span").first().text(data.categories[0].Spent.toFixed(2));
