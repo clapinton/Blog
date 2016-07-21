@@ -51,4 +51,6 @@ I first learned about git at a startup I worked for, but I never really learned 
 
 `git remote -v`: list all remote repos;
 
+`git remote rename {current name} {new name}`: changes the name of an existing remote;
+
 `git push {remote-repo} {local-repo}`: pushes my branch to the remote repo;
